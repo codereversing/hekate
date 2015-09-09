@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Hook">
+      <UniqueIdentifier>{265714d7-6819-4694-8ef2-9380c8ddd48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hook">
+      <UniqueIdentifier>{2b44ac58-9c1c-4f2f-a3bd-c289964e25c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hook\Platform">
+      <UniqueIdentifier>{f918ed4d-defe-4f43-a0a1-629c8fb0d5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hook\Platform">
+      <UniqueIdentifier>{9cd9d2d8-af94-46c8-ab6b-0d002bbafa98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Protobuf">
+      <UniqueIdentifier>{be6f411f-b5b0-4ffd-823f-ea67fdadcbaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protobuf">
+      <UniqueIdentifier>{02d34008-99f2-41ef-8fe8-ccaa0445e735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Common">
+      <UniqueIdentifier>{1dc455cc-6ada-4b0c-9be4-59667d04a27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Capstone">
+      <UniqueIdentifier>{b5559e1f-edec-4cc1-b98c-42fab7dfb565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Capstone">
+      <UniqueIdentifier>{f1807d0c-19cd-456e-b60f-6632c886a7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Winsock">
+      <UniqueIdentifier>{014e11c2-ce14-40bb-882e-c95d8e4c92f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Winsock">
+      <UniqueIdentifier>{a4f4a3f8-f509-46a8-b1ba-33e2351d0dd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Winsock\Platform">
+      <UniqueIdentifier>{27dc83f2-d9df-4501-9699-8d893299f97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Winsock\Platform">
+      <UniqueIdentifier>{a9572e7a-2a8c-41ae-91bd-58ca275bbd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{e704c007-5035-459f-ac84-498cd9a06514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Winsock\Hooks">
+      <UniqueIdentifier>{424ae432-d6f9-4c54-9f9f-1c30c6143522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Winsock\Hooks">
+      <UniqueIdentifier>{02b56409-f599-4963-bfe7-63e1dcc9594d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Protobuf\Proto">
+      <UniqueIdentifier>{0da1ac23-53f3-46d7-8179-a7f761024c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IPC">
+      <UniqueIdentifier>{adba0938-7853-432b-a9ad-401f8181af54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IPC">
+      <UniqueIdentifier>{38dab5f6-8ed6-481d-bc78-a36e441b61e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protobuf\Proto">
+      <UniqueIdentifier>{0b243062-faab-4772-a53f-26c671327f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Protobuf\Proto\Server">
+      <UniqueIdentifier>{f6aa15d2-97ef-49c9-8a7d-5a0b559033b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Protobuf\Proto\Client">
+      <UniqueIdentifier>{d36ba837-66e3-42ec-b10b-3e7d615a7316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protobuf\Proto\Server">
+      <UniqueIdentifier>{f19111c3-842d-40bf-b79d-48aced7b6ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protobuf\Proto\Client">
+      <UniqueIdentifier>{7838179c-eed3-4125-8b5c-2f9b900e2e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Protobuf\Message">
+      <UniqueIdentifier>{74557659-d84e-428d-b56d-a40c99983f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Protobuf\Message">
+      <UniqueIdentifier>{771f60a1-d99b-4bc9-8a74-fcaa1ec65724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Filter">
+      <UniqueIdentifier>{7c4da77c-9afd-4389-a23c-2824ffe6cfcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Filter">
+      <UniqueIdentifier>{8a07f46a-942d-48e7-a8b0-91ac5131d85f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{7df08e3e-dab7-490f-8857-05cb5b15ab44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{1201eb1a-6ee2-4ca7-b03e-c6570e18c3d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\HookBase.cpp">
+      <Filter>Source Files\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\HookEngine.cpp">
+      <Filter>Source Files\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\InlineHook.cpp">
+      <Filter>Source Files\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\Platform\InlinePlatformHook_x64.cpp">
+      <Filter>Source Files\Hook\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\Platform\InlinePlatformHook_x86.cpp">
+      <Filter>Source Files\Hook\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\Platform\InlinePlatformHook.cpp">
+      <Filter>Source Files\Hook\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Capstone\ScopedCapstoneHandle.cpp">
+      <Filter>Source Files\Capstone</Filter>
+    </ClCompile>
+    <ClCompile Include="Capstone\ScopedCapstoneInstructions.cpp">
+      <Filter>Source Files\Capstone</Filter>
+    </ClCompile>
+    <ClCompile Include="Capstone\CapstoneDll.cpp">
+      <Filter>Source Files\Capstone</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\SafeObject.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="IPC\IPCBase.cpp">
+      <Filter>Source Files\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="IPC\IPCNamedPipe.cpp">
+      <Filter>Source Files\IPC</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Proto\Server\HekateServerProto.pb.cc">
+      <Filter>Source Files\Protobuf\Proto\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Proto\Client\HekateClientProto.pb.cc">
+      <Filter>Source Files\Protobuf\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Message\HekateServerMessageBuilder.cpp">
+      <Filter>Source Files\Protobuf\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Message\IMessageHandler.cpp">
+      <Filter>Source Files\Protobuf\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Winsock\WinsockFunction.cpp">
+      <Filter>Source Files\Winsock</Filter>
+    </ClCompile>
+    <ClCompile Include="Protobuf\Message\HekateClientMessageBuilder.cpp">
+      <Filter>Source Files\Protobuf\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="App\HekateMain.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="App\HekateMessageHandler.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter\HekateFilter.cpp">
+      <Filter>Source Files\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter\ByteFilter.cpp">
+      <Filter>Source Files\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter\LengthFilter.cpp">
+      <Filter>Source Files\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="Winsock\Platform\WinsockPlatformHook.cpp">
+      <Filter>Source Files\Winsock\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Winsock\Hooks\WinsockHooks.cpp">
+      <Filter>Source Files\Winsock\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter\SubstringFilter.cpp">
+      <Filter>Source Files\Filter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hook\HookBase.h">
+      <Filter>Header Files\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\HookEngine.h">
+      <Filter>Header Files\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\InlineHook.h">
+      <Filter>Header Files\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\Platform\InlinePlatformHook_x64.h">
+      <Filter>Header Files\Hook\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\Platform\InlinePlatformHook_x86.h">
+      <Filter>Header Files\Hook\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\Platform\InlinePlatformHook.h">
+      <Filter>Header Files\Hook\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Capstone\ScopedCapstoneHandle.h">
+      <Filter>Header Files\Capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="Capstone\ScopedCapstoneInstructions.h">
+      <Filter>Header Files\Capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="Capstone\CapstoneDll.h">
+      <Filter>Header Files\Capstone</Filter>
+    </ClInclude>
+    <ClInclude Include="Winsock\WinsockFunction.h">
+      <Filter>Header Files\Winsock</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\SafeObject.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Winsock\Hooks\WinsockHookFunctions.h">
+      <Filter>Header Files\Winsock\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="IPC\IPCBase.h">
+      <Filter>Header Files\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="IPC\IPCNamedPipe.h">
+      <Filter>Header Files\IPC</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Proto\Server\HekateServerProto.pb.h">
+      <Filter>Header Files\Protobuf\Proto\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Proto\Client\HekateClientProto.pb.h">
+      <Filter>Header Files\Protobuf\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Message\HekateServerMessageBuilder.h">
+      <Filter>Header Files\Protobuf\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Message\IMessageHandler.h">
+      <Filter>Header Files\Protobuf\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Protobuf\Message\HekateClientMessageBuilder.h">
+      <Filter>Header Files\Protobuf\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="App\HekateMain.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="App\HekateMessageHandler.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="App\IHekate.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter\HekateFilter.h">
+      <Filter>Header Files\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter\ByteFilter.h">
+      <Filter>Header Files\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter\LengthFilter.h">
+      <Filter>Header Files\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="Winsock\Platform\WinsockPlatformHook.h">
+      <Filter>Header Files\Winsock\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Winsock\Hooks\WinsockHooks.h">
+      <Filter>Header Files\Winsock\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter\SubstringFilter.h">
+      <Filter>Header Files\Filter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Protobuf\Proto\HekateServerProto.proto">
+      <Filter>Header Files\Protobuf\Proto</Filter>
+    </None>
+    <None Include="Protobuf\Proto\HekateClientProto.proto">
+      <Filter>Header Files\Protobuf\Proto</Filter>
+    </None>
+  </ItemGroup>
+</Project>

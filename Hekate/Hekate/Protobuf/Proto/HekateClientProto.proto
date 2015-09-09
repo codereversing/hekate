@@ -1,0 +1,112 @@
+syntax = "proto2";
+
+import "HekateServerProto.proto";
+
+package Hekate.Protobuf.Proto.Client;
+
+message AddHookMessage
+{
+	required string name = 1;
+}
+
+message RemoveHookMessage
+{
+	required string name = 1;
+}
+
+enum FilterType
+{
+	BYTE = 0;
+	LENGTH = 1;
+	SUBSTRING = 2;
+}
+
+enum LengthType
+{
+	LESS = 0;
+	EQUAL = 1;
+	GREATER = 2;
+}
+
+message ByteFilterMessage
+{
+	repeated int32 byte_value = 1;
+	repeated int32 byte_index = 2;
+	required int32 byte_count = 3;
+}
+
+message SubstringFilterMessage
+{
+	required bytes match = 1;
+	required int32 length = 2;
+}
+
+message LengthFilterMessage
+{
+	required int32 length_value = 1;
+	required LengthType length_type = 2;
+}
+
+message SubstituteMessage
+{
+	repeated int32 byte_value = 1;
+	repeated int32 byte_index = 2;
+	required int32 byte_count = 3;
+}
+
+message ReplacementMessage
+{
+	required bytes buffer = 1;
+	required int32 length = 2;
+}
+
+message AddFilterMessage
+{
+	required FilterType type = 1;
+	required int32 filter_id = 2;
+	required bool break_on_hit = 3;
+	
+	optional ByteFilterMessage byte_filter = 4;
+	optional LengthFilterMessage length_filter = 5;
+	optional SubstringFilterMessage string_filter = 6;
+	optional SubstituteMessage substitute = 7;
+	optional ReplacementMessage replacement = 8;
+}
+
+message RemoveFilterMessage
+{
+	required int32 filter_id = 1;
+}
+
+enum MessageType
+{
+	ADD_HOOK = 0;
+	REMOVE_HOOK = 1;
+	ADD_FILTER = 2;
+	REMOVE_FILTER = 3;
+	PAUSE = 4;
+	CONTINUE = 5;
+	REPLAY = 6;
+}
+
+message ReplayMessage
+{
+	required Hekate.Protobuf.Proto.Server.HekateToClientMessage message = 1;
+}
+
+message ClientToHekateMessage
+{
+	required MessageType type = 1;
+	optional AddHookMessage add_hook = 2;
+	optional RemoveHookMessage remove_hook = 3;
+	optional AddFilterMessage add_filter = 4;
+	optional RemoveFilterMessage remove_filter = 5;
+	optional ReplayMessage replay = 6;
+	optional bool continue = 7;
+}
+
+message HekateClientMessage
+{
+	required ClientToHekateMessage clientMessage = 1;
+	optional int32 debug_response_id = 2;
+}

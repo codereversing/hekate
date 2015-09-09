@@ -1,0 +1,123 @@
+syntax = "proto2";
+
+package Hekate.Protobuf.Proto.Server;
+
+message SendMessage_
+{
+	required int64 socket = 1;
+	required bytes buffer = 2;
+	required int32 length = 3;
+	required int32 flags = 4;
+}
+
+message SendToMessage
+{
+	required int64 socket = 1;
+	required bytes buffer = 2;
+	required int32 length = 3;
+	required int32 flags = 4;
+	required int64 to_address = 5;
+	required int32 to_length = 6;
+}
+
+message WSASendMessage
+{
+	required int64 socket = 1;
+	repeated bytes buffers = 2;
+	repeated int32 buffer_size = 3;
+	required int32 count = 4;
+	required int64 bytes_sent_address = 5;
+	required int32 flags = 6;
+	required int64 overlapped_address = 7;
+	required int64 overlapped_routine_address = 8;
+}
+
+message WSASendToMessage
+{
+	required int64 socket = 1;
+	repeated bytes buffers = 2;
+	repeated int32 buffer_size = 3;
+	required int32 count = 4;
+	required int64 bytes_sent_address = 5;
+	required int32 flags = 6;
+	required int64 to_address = 7;
+	required int32 to_length = 8;
+	required int64 overlapped_address = 9;
+	required int64 overlapped_routine_address = 10;
+}
+
+message RecvMessage
+{
+	required int64 socket = 1;
+	required int64 buffer = 2;
+	required int32 length = 3;
+	required int32 flags = 4;
+}
+
+message RecvFromMessage
+{
+	required int64 socket = 1;
+	required int64 buffer = 2;
+	required int32 length = 3;
+	required int32 flags = 4;
+	required int64 from_address = 5;
+	required int64 from_length_address = 6;
+}
+
+message WSARecvMessage
+{
+	required int64 socket = 1;
+	repeated int64 buffers = 2;
+	repeated int32 buffer_size = 3;
+	required int32 count = 4;
+	required int64 bytes_received_address = 5;
+	required int64 flags_address = 6;
+	required int64 overlapped_address = 7;
+	required int64 overlapped_routine_address = 8;
+}
+
+message WSARecvFromMessage
+{
+	required int64 socket = 1;
+	repeated int64 buffers = 2;
+	repeated int32 buffer_size = 3;
+	required int32 count = 4;
+	required int64 bytes_received_address = 5;
+	required int64 flags_address = 6;
+	required int64 from_address = 7;
+	required int64 from_length_address = 8;
+	required int64 overlapped_address = 9;
+	required int64 overlapped_routine_address = 10;
+}
+
+message HekateToClientMessage
+{
+	optional SendMessage_ send = 1;
+	optional SendToMessage sendto = 2;
+	optional WSASendMessage wsasend = 3;
+	optional WSASendToMessage wsasendto = 4;
+
+	optional RecvMessage recv = 5;
+	optional RecvFromMessage recvfrom = 6;
+	optional WSARecvMessage wsarecv = 7;
+	optional WSARecvFromMessage wsarecvfrom = 8;
+	
+	optional FilterHitMessage filter_message = 9;
+}
+
+message AcknowledgeMessage
+{
+	optional int32 debug_response_id = 1;
+}
+
+message FilterHitMessage
+{
+	required int32 filter_id = 1;
+	required bool broken = 2;
+}
+
+message HekateMessage
+{
+	required HekateToClientMessage hook_info = 1;
+	optional AcknowledgeMessage acknowledge = 2;
+}
